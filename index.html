@@ -4,11 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page d'accueil</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+  <style>
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+    .carousel-control-prev-icon:hover,
+    .carousel-control-next-icon:hover {
+      background-color: rgba(0,0,0,0.7);
+    }
+  </style>
 </head>
 
 <body>
-  <!-- Navbar -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -37,11 +50,11 @@
   </header>
   <main>
   <!-- Carousel -->
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-target="#carouselExampleIndicators" data-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-target="#carouselExampleIndicators" data-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-target="#carouselExampleIndicators" data-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -54,11 +67,11 @@
         <img src="https://www.pagesjaunes.fr/media/agc/41/be/91/00/00/7b/a6/86/9c/e3/62bc41be9100007ba6869ce3/62bc41be9100007ba6869ce4.jpg" class="d-block w-100" alt="Image 3">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -78,7 +91,7 @@
     <div class="row">
       <div class="col-md-4">
         <div class="card">
-          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Card 1">
+          <img src="img/macarron.png" class="card-img-top" alt="Card 1">
           <div class="card-body">
             <h5 class="card-title">Service 1</h5>
             <p class="card-text">Description de service 1.</p>
@@ -88,7 +101,7 @@
       </div>
       <div class="col-md-4">
         <div class="card">
-          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Card 2">
+          <img src="img/nounours.png" class="card-img-top" alt="Card 2">
           <div class="card-body">
             <h5 class="card-title">Service 2</h5>
             <p class="card-text">Description de service 2.</p>
@@ -98,7 +111,7 @@
       </div>
       <div class="col-md-4">
         <div class="card">
-          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Card 3">
+          <img src="img/sucette.png" class="card-img-top" alt="Card 3">
           <div class="card-body">
             <h5 class="card-title">Service 3</h5>
             <p class="card-text">Description de service 3.</p>
@@ -165,7 +178,13 @@
 
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $('.carousel').carousel({
+      interval: 2000
+    });
+  </script>
 </body>
 </html>
