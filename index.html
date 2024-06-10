@@ -6,10 +6,36 @@
   <title>Page d'accueil</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-
-  <iframe src="header.html" style="width:100%; height: 59px;"></iframe>
-
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Le royaume du Quernon</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">À propos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+  </header>
+  <main>
   <!-- Carousel -->
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -102,40 +128,42 @@
       <button type="submit" class="btn btn-primary">Envoyer</button>
     </form>
   </div>
+</main>
 
-  <!-- Footer -->
-  <footer class="bg-light text-center text-lg-start mt-5">
-    <div class="container p-4">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase">MonSite</h5>
-          <p>
-            Découvrez nos services et solutions innovantes pour améliorer votre quotidien.
-          </p>
-        </div>
-        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Liens utiles</h5>
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!" class="text-dark">Accueil</a>
-            </li>
-            <li>
-              <a href="#!" class="text-dark">À propos</a>
-            </li>
-            <li>
-              <a href="#!" class="text-dark">Services</a>
-            </li>
-            <li>
-              <a href="#!" class="text-dark">Contact</a>
-            </li>
-          </ul>
-        </div>
+<footer class="bg-light text-center text-lg-start mt-5">
+  <div class="container p-4">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">MonSite</h5>
+        <p>
+          Découvrez nos services et solutions innovantes pour améliorer votre quotidien.
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Liens utiles</h5>
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="text-dark">Accueil</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">À propos</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Services</a>
+          </li>
+          <li>
+            <a href="#!" class="text-dark">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="text-center p-3 bg-light">
-      © 2023 MonSite. Tous droits réservés.
-    </div>
-  </footer>
+  </div>
+  <div class="text-center p-3 bg-light">
+    © 2023 MonSite. Tous droits réservés.
+  </div>
+</footer>
+
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
